@@ -25,7 +25,9 @@ b'{"access_token":"83cdaa6b-4cfd-4c8c-a2b0-fd82f2496369","token_type":"bearer","
 """
 
 
-c.request('GET', '/api/users/details?email=humblevladimirthegreat%40gmx%2Ecom', headers=headers, )#body='email=humblevladimirthegreat%40gmx%2Ecom', )
+#c.request('GET', '/api/users/details?email=humblevladimirthegreat%40gmx%2Ecom', headers=headers, )
+c.request('GET', '/api/fields', headers=headers, )
+
 #get the response back
 print (c)
 res = c.getresponse()
@@ -34,3 +36,5 @@ res = c.getresponse()
 # this gets the page text
 data = res.read()  
 print (data)
+
+#python web2py.py -a thesocietyq234
