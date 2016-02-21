@@ -230,8 +230,8 @@ public class AddCropCircles extends Application
 	
 	public static void main(String[] args) 
 	{
-		//filename = args[0];
-		filename = "Field.jpg";
+		filename = args[0];
+		//filename = "Field.jpg";
 		launch(args);
 	}
 
